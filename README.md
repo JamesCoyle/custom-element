@@ -18,7 +18,7 @@ MyElement.define('custom-element');
 ```
 	
 ## Add a Template
-A template can be added easily by adding a static template getter which returns the template as a string. In the following example I'm using Webpack to import the HTML file as a string so I don't need to inline the HTML in the JavaScript file. You could also fetch this file via `XMLHttpRequest` or `fetch` if desired, import a javascript file which exports the string, or can just use an inline string if you prefer.
+A template can be added easily by adding a static template getter which returns the template as a string. In the following example I'm using Webpack to import the HTML file as a string so I don't need to inline the HTML in the JavaScript file. You could also fetch this file via `XMLHttpRequest` or `fetch`, import a javascript file which exports the string, or can just use an inline string if you prefer.
 
 ```js
 import CustomElement from '../custom-element.js';
