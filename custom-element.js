@@ -1,8 +1,8 @@
 export default class CustomElement extends HTMLElement
 {
-	static define()
+	static define(name)
 	{
-		customElements.define(this.is, this);
+		customElements.define(name, this);
 	}
 
 	connectedCallback()
