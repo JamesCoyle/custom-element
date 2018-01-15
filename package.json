@@ -1,0 +1,19 @@
+{
+  "name": "custom-element",
+  "version": "1.0.0",
+  "description": "A basic helper for creating webcomponents\r # Usage\r CustomElement is a class which extends HTMLElement and sets up shadow dom and element registration automatically.",
+  "main": "custom-element.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesCoyle/custom-element.git"
+  },
+  "author": "James Coyle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JamesCoyle/custom-element/issues"
+  },
+  "homepage": "https://github.com/JamesCoyle/custom-element#readme"
+}
