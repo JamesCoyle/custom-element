@@ -43,13 +43,17 @@ The following properties are available to classes which inherit custom element. 
 Provides access to DOM content added by the template.
 
 #### Syntax
-`this.shadowRoot;`
+```
+this.shadowRoot;
+```
 
 ### Default Slot
 Returns the default slot element if defined, otherwise null.
 
 #### Syntax
-`this.defaultSlot;`
+```
+this.defaultSlot;
+```
 
 ## Methods
 
@@ -57,7 +61,9 @@ Returns the default slot element if defined, otherwise null.
 Registers the element with the browser.
 
 #### Syntax
-`MyElement.registerAs(elementName);`
+```
+MyElement.registerAs(elementName);
+```
 
 #### Parameters
 Parameter | Description
