@@ -16,5 +16,8 @@ export default class CustomElement extends HTMLElement
 		// append template if defined
 		if (typeof this.constructor.template !== 'undefined')
 			this.shadowRoot.innerHTML = this.constructor.template;
+
+		// get slot
+		this.defaultSlot = this.shadowRoot.querySelector('slot:not([name])');
 	}
 }
