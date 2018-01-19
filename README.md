@@ -43,7 +43,7 @@ The following properties are available to classes which inherit custom element. 
 Provides access to DOM content added by the template.
 
 #### Syntax
-```
+```js
 this.shadowRoot;
 ```
 
@@ -51,7 +51,7 @@ this.shadowRoot;
 Returns the default slot element if defined, otherwise null.
 
 #### Syntax
-```
+```js
 this.defaultSlot;
 ```
 
@@ -61,7 +61,7 @@ this.defaultSlot;
 Registers the element with the browser.
 
 #### Syntax
-```
+```js
 MyElement.registerAs(elementName);
 ```
 
