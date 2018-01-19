@@ -1,6 +1,6 @@
 export default class CustomElement extends HTMLElement
 {
-	static define(name)
+	static registerAs(name)
 	{
 		customElements.define(name, this);
 	}
@@ -13,11 +13,18 @@ export default class CustomElement extends HTMLElement
 			mode: 'open'
 		});
 
-		// append template if defined
+		// check if template defined
 		if (typeof this.constructor.template !== 'undefined')
+		{
+			// append template
 			this.shadowRoot.innerHTML = this.constructor.template;
 
-		// get slot
-		this.defaultSlot = this.shadowRoot.querySelector('slot:not([name])');
+			// get default slot
+			this.defaultSlot = this.shadowRoot.querySelector('slot:not([name])');
+		}
+		else
+		{
+			this.defaultSlot = null;
+		}
 	}
 }
