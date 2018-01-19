@@ -15,9 +15,9 @@ export default class MyElement extends CustomElement
 
 }
 
-MyElement.define('custom-element');
+MyElement.registerAs('custom-element');
 ```
-	
+
 ### Add a Template
 A template can be added easily by adding a static template getter which returns the template as a string. In the following example I'm using Webpack to import the HTML file as a string so I don't need to inline the HTML in the JavaScript file. You could also fetch this file via `XMLHttpRequest` or `fetch`, import a javascript file which exports the string, or can just use an inline string if you prefer.
 
@@ -33,7 +33,7 @@ export default class MyElement extends CustomElement
 	}
 }
 
-MyElement.define('custom-element');
+MyElement.registerAs('custom-element');
 ```
 
 ## Properties
@@ -53,11 +53,11 @@ Returns the default slot element if defined, otherwise null.
 
 ## Methods
 
-### Define [static]
+### Register As [static]
 Registers the element with the browser.
 
 #### Syntax
-`MyElement.define(elementName);`
+`MyElement.registerAs(elementName);`
 
 #### Parameters
 Parameter | Description
