@@ -1,10 +1,5 @@
 export default class CustomElement extends HTMLElement
 {
-	static registerAs(name)
-	{
-		customElements.define(name, this);
-	}
-
 	connectedCallback()
 	{
 		// build shadow dom
