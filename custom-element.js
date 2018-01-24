@@ -1,6 +1,6 @@
 export default class CustomElement extends HTMLElement
 {
-	connectedCallback()
+	constructor()
 	{
 		// build shadow dom
 		this.attachShadow(
