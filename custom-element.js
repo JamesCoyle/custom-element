@@ -25,3 +25,13 @@ export default class CustomElement extends HTMLElement
 		}
 	}
 }
+
+export class CustomFocusableElement extends CustomElement
+{
+	constructor()
+	{
+		super();
+
+		this.tabIndex = 0;
+	}
+}
