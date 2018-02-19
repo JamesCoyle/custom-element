@@ -56,8 +56,3 @@ Returns the default slot element if defined, otherwise null.
 ```js
 this.defaultSlot;
 ```
-
-#### Parameters
-Parameter | Description
---- | ---
-elementName | The tag name to use for the element. eg. 'my-element'
